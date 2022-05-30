@@ -1,5 +1,6 @@
 import {environment} from "../../environments/environment";
 
-export {API} = environment;
+
+export {API} = environment
 
 

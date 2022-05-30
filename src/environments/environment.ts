@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  API:'https://api.themoviedb.org/3/'
+  API:'https://api.themoviedb.org/3'
 };
 

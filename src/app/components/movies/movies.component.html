@@ -1,1 +1,5 @@
-<p>movies works!</p>
+
+<div *ngIf="movies?.length">
+<app-header *ngFor="let m of movies" [m]="m"></app-header>
+
+</div>

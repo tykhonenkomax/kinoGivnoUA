@@ -11,8 +11,8 @@ export class MoviesService {
 
   constructor(private httpClient:HttpClient) { }
 
-  getMovies(page: number):Observable<{ page: number; results:IMovies[] }>{
-    return this.httpClient.get<{ page: number; results: IMovies[] }>(urls.movies,{ params: { page } })
+  getMovies(page:number):Observable<{page: number; results: IMovies[]}>{
+    return this.httpClient.get<{page: number; results: IMovies[]}>(urls.movies, {params:{page}})
   }
 
   getMovie(id:number|string):Observable< {page: number; results: IMovies}>{
@@ -23,7 +23,7 @@ export class MoviesService {
     return this.httpClient.get<{genres: IGenre[]}>(urls.genres+`/movies`)
   }
   getMoviesByGenre(genreId:number):Observable<{page: number; results: IMovies[]}>{
-    return  this.httpClient.get<{page: number; results: IMovies[]}>(urls.genres+`${genreId}` + `/movies`)
+    return  this.httpClient.get<{page: number; results: IMovies[]}>(urls.genres +`${genreId}` + `/movies`)
 };
 
 

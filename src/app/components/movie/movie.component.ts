@@ -10,12 +10,14 @@ export class MovieComponent implements OnInit {
 
  @Input()
  movie: IMovies;
+ posterPath: string|number;
 
   constructor() { }
 
 
 
   ngOnInit(): void {
+    this.posterPath = `https://image.tmdb.org/t/p/w500/${this.movie.poster_path}`;
   }
 
 }

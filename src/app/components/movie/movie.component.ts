@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {IMovies} from "../../interfaces";
 
 @Component({
   selector: 'app-movie',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieComponent implements OnInit {
 
+ @Input()
+ movie: IMovies;
+
   constructor() { }
+
+
 
   ngOnInit(): void {
   }

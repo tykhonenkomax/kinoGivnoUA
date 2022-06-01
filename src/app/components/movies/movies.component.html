@@ -1,5 +1,5 @@
-
 <div *ngIf="movies?.length">
-<app-header *ngFor="let m of movies" [m]="m"></app-header>
-
+  <ng-container *ngFor="let movie of movies">
+    <app-movie [movie]="movie"></app-movie>
+  </ng-container>
 </div>

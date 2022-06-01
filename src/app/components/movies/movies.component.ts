@@ -9,14 +9,14 @@ import {IGenre, IMovies} from "../../interfaces";
 })
 export class MoviesComponent implements OnInit {
   page:number;
-  movies!:IMovies[];
+  movies:IMovies[];
 
   constructor(private moviesService:MoviesService) {
     this.page = 1;
   }
 
   ngOnInit(): void {
-
+    this.getMovies(this.page);
   }
 
   getMovies = (page: number) =>

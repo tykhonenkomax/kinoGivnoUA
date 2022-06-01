@@ -1,1 +1,6 @@
-<p>movie works!</p>
+<ng-container *ngIf="movie">
+  <h2>{{movie.original_title}}</h2>
+  <p>{{movie.overview}}</p>
+<!--  <img width="100px" height="100px" *ngIf="posterPath" [src]="posterPath">-->
+</ng-container>
+

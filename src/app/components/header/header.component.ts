@@ -9,8 +9,6 @@ import {IMovies} from "../../interfaces";
 })
 export class HeaderComponent implements OnInit {
 
-@Input()
-m!:IMovies;
   constructor() { }
 
 
